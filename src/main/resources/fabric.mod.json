@@ -1,13 +1,15 @@
 {
   "schemaVersion": 1,
-  "id": "ciallo",
+  "id": "yzljc_ciallo_launcher",
   "version": "${version}",
 
-  "name": "Ciallo",
-  "description": "被服务器踢出后自动打开千恋*万花 Ciallo～(∠・ω< )⌒★",
-  "authors": ["YZ_Ljc_"],
+  "name": "CialloLauncher",
+  "description": "被服务器踢出后自动打开千恋*万花或其他文件 Ciallo～(∠・ω< )⌒★\n\n你可以输入多个Steam APP ID或者文件路径，当输入多个时会随机抽取一个启动\n全屏模式启动可能会有问题导致程序没有正常启动，建议不要开\n我们的配置文件名字为yzljc_launchapp_config.json",
+  "authors": ["哔哩哔哩YZ_Ljc_"],
   "contact": {
-    "homepage": "https://github.com/YZLjc/Ciallo"
+    "homepage": "https://github.com/yz-ljc/LaunchSenrenBanka",
+    "issues": "https://github.com/yz-ljc/LaunchSenrenBanka/issues",
+    "sources": "https://github.com/yz-ljc/LaunchSenrenBanka"
   },
 
   "license": "MIT License",
@@ -17,7 +19,10 @@
   "entrypoints": {
     "fabric-datagen": ["top.yzljc.ciallo.client.CialloDataGenerator"],
     "client": ["top.yzljc.ciallo.client.CialloClient"],
-    "main": ["top.yzljc.ciallo.Ciallo"]
+    "main": ["top.yzljc.ciallo.Ciallo"],
+    "modmenu": [
+      "top.yzljc.ciallo.client.compat.ModMenuIntegration"
+    ]
   },
 
   "mixins": [

@@ -15,7 +15,7 @@ public class CheckGetKicked {
     @Inject(method = "setScreen", at = @At("HEAD"))
     private void onSetScreen(Screen screen, CallbackInfo ci) {
         if (screen instanceof DisconnectedScreen) {
-            SteamLauncher.launchSenrenBanka();
+            SteamLauncher.launch();
         }
     }
 }
