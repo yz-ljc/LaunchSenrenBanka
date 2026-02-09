@@ -6,7 +6,9 @@
   "name": "Ciallo",
   "description": "被服务器踢出后自动打开千恋*万花 Ciallo～(∠・ω< )⌒★",
   "authors": ["YZ_Ljc_"],
-  "contact": {},
+  "contact": {
+    "homepage": "https://github.com/YZLjc/Ciallo"
+  },
 
   "license": "MIT License",
   "icon": "assets/ciallo/icon.png",
