@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "ciallo",
+  "version": "${version}",
+
+  "name": "Ciallo",
+  "description": "被服务器踢出后自动打开千恋*万花 Ciallo～(∠・ω< )⌒★",
+  "authors": ["YZ_Ljc_"],
+  "contact": {},
+
+  "license": "MIT License",
+  "icon": "assets/ciallo/icon.png",
+
+  "environment": "client",
+  "entrypoints": {
+    "fabric-datagen": ["top.yzljc.ciallo.client.CialloDataGenerator"],
+    "client": ["top.yzljc.ciallo.client.CialloClient"],
+    "main": ["top.yzljc.ciallo.Ciallo"]
+  },
+
+  "mixins": [
+    "ciallo.mixins.json"
+    ,{
+      "config": "ciallo.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}

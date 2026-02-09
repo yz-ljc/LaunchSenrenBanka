@@ -1,0 +1,18 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "top.yzljc.ciallo.client.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "CheckGetKicked"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  },
+  "mixins": [
+    "CheckGetKicked"
+  ]
+}
